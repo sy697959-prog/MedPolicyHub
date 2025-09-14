@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedPolicyHub - Medical Policy Information Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>MedPolicyHub</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#policies" class="nav-link">Policies</a>
+                <a href="#guidelines" class="nav-link">Guidelines</a>
+                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Comprehensive Medical Policy Information</h1>
+                <p class="hero-subtitle">Your trusted source for healthcare policies, regulations, and guidelines for professionals, policymakers, and patients.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('policies')">Explore Policies</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('resources')">View Resources</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=500" alt="Medical professionals reviewing policies">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose MedPolicyHub?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Comprehensive Database</h3>
+                    <p>Access thousands of medical policies and regulations from trusted healthcare authorities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Advanced Search</h3>
+                    <p>Find specific policies quickly with our intelligent search and filtering system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access critical policy information on any device, anywhere, anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Regular Updates</h3>
+                    <p>Stay current with the latest policy changes and regulatory updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section id="policies" class="policies">
+        <div class="container">
+            <h2 class="section-title">Policy Categories</h2>
+            <div class="policy-grid">
+                <div class="policy-card" onclick="toggleCard(this)">
+                    <h3>Patient Safety Policies</h3>
+                    <p>Guidelines and regulations focused on ensuring patient safety and quality care.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Medication Safety Protocols</li>
+                            <li>Infection Control Guidelines</li>
+                            <li>Emergency Response Procedures</li>
+                        </ul>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="policy-card" onclick="toggleCard(this)">
+                    <h3>Privacy & Compliance</h3>
+                    <p>HIPAA regulations and data protection policies for healthcare organizations.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>HIPAA Compliance Requirements</li>
+                            <li>Data Security Standards</li>
+                            <li>Patient Consent Procedures</li>
+                        </ul>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="policy-card" onclick="toggleCard(this)">
+                    <h3>Clinical Guidelines</h3>
+                    <p>Evidence-based clinical practice guidelines and treatment protocols.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Treatment Protocols</li>
+                            <li>Diagnostic Guidelines</li>
+                            <li>Best Practice Standards</li>
+                        </ul>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="policy-card" onclick="toggleCard(this)">
+                    <h3>Regulatory Compliance</h3>
+                    <p>Federal and state healthcare regulations and compliance requirements.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>FDA Regulations</li>
+                            <li>State Licensing Requirements</li>
+                            <li>Quality Assurance Standards</li>
+                        </ul>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Resources & Tools</h2>
+            <div class="resources-grid">
+                <div class="resource-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Policy Documents">
+                    <h3>Policy Documents</h3>
+                    <p>Download official policy documents and implementation guides.</p>
+                    <button class="btn btn-outline">Access Documents</button>
+                </div>
+                <div class="resource-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Training Materials">
+                    <h3>Training Materials</h3>
+                    <p>Educational resources and training materials for healthcare professionals.</p>
+                    <button class="btn btn-outline">View Training</button>
+                </div>
+                <div class="resource-item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Compliance Tools">
+                    <h3>Compliance Tools</h3>
+                    <p>Interactive tools and checklists to ensure policy compliance.</p>
+                    <button class="btn btn-outline">Use Tools</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> info@medpolicyhub.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> (555) 123-4567
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> 123 Healthcare Ave, Medical District, MD 12345
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="policy-inquiry">Policy Inquiry</option>
+                            <option value="technical-support">Technical Support</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MedPolicyHub</h3>
+                    <p>Your trusted source for comprehensive medical policy information and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#policies">Policies</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedPolicyHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
